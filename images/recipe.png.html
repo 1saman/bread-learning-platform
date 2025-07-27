@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Рецепт - Домашний хлеб</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .screenshot {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+        .back-link {
+            color: #ff9800;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .recipe-image {
+            height: 400px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 18px;
+        }
+        .recipe-overview {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .overview-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: white;
+        }
+        .tag.beginner { background: #ff9800; }
+        .tag.time { background: #ffc107; }
+        .tag.servings { background: #4caf50; }
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .watch-btn {
+            background: #ff9800;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ff9800;
+        }
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .instructions-list {
+            list-style: decimal;
+            padding-left: 20px;
+        }
+        .instructions-list li {
+            padding: 8px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="screenshot">
+        <div class="header">
+            <a href="#" class="back-link">← НАЗАД К РЕЦЕПТАМ</a>
+            <h1 class="page-title">Домашний хлеб</h1>
+        </div>
+        
+        <div class="main-content">
+            <div class="recipe-image">
+                🥖 Свежеиспеченный домашний хлеб
+            </div>
+            
+            <div class="recipe-overview">
+                <h2 class="overview-title">О рецепте</h2>
+                <div class="tags">
+                    <span class="tag beginner">Начинающий</span>
+                    <span class="tag time">180 мин</span>
+                    <span class="tag servings">6 порций</span>
+                </div>
+                <p class="description">
+                    Простой рецепт домашнего хлеба на закваске, который покорит ваше сердце своим ароматом и вкусом. Идеально подходит для начинающих пекарей.
+                </p>
+                <button class="watch-btn">СМОТРЕТЬ ВИДЕОУРОК</button>
+            </div>
+        </div>
+        
+        <div class="details-grid">
+            <div class="section">
+                <h3 class="section-title">Ингредиенты</h3>
+                <ul class="ingredients-list">
+                    <li>500 г пшеничной муки</li>
+                    <li>300 мл теплой воды</li>
+                    <li>10 г соли</li>
+                    <li>7 г сухих дрожжей</li>
+                    <li>1 ст.л. сахара</li>
+                    <li>2 ст.л. растительного масла</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Инструкция по приготовлению</h3>
+                <ol class="instructions-list">
+                    <li>Смешайте теплую воду с дрожжами и сахаром, оставьте на 10 минут</li>
+                    <li>В большой миске смешайте муку и соль</li>
+                    <li>Добавьте активированные дрожжи и масло, замесите тесто</li>
+                    <li>Накройте тесто полотенцем и оставьте на 1 час в теплом месте</li>
+                    <li>Обомните тесто и сформируйте буханку</li>
+                    <li>Выпекайте при 200°С 40-45 минут</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная страница - Школа хлебопечения</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .screenshot {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-bottom: 2px solid transparent;
+        }
+        .nav a.active {
+            border-bottom-color: #ff9800;
+        }
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 300px;
+        }
+        .filter-select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .recipe-image {
+            height: 200px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .recipe-content {
+            padding: 15px;
+        }
+        .recipe-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .recipe-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .recipe-tags {
+            display: flex;
+            gap: 10px;
+        }
+        .tag {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="screenshot">
+        <div class="header">
+            <h1>Школа хлебопечения</h1>
+        </div>
+        
+        <div class="nav">
+            <a href="#" class="active">РЕЦЕПТЫ</a>
+            <a href="#">ВИДЕОУРОКИ</a>
+            <a href="#">МАСТЕР-КЛАССЫ</a>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Поиск рецептов">
+            <select class="filter-select">
+                <option>Все уровни</option>
+                <option>Начинающий</option>
+                <option>Средний</option>
+                <option>Сложный</option>
+            </select>
+            <button class="btn">СМОТРЕТЬ ВИДЕОУРОКИ</button>
+        </div>
+        
+        <div class="recipes-grid">
+            <div class="recipe-card">
+                <div class="recipe-image">🍞 Классический багет</div>
+                <div class="recipe-content">
+                    <div class="recipe-title">Классический багет</div>
+                    <div class="recipe-description">Традиционный французский багет с хрустящей корочкой</div>
+                    <div class="recipe-tags">
+                        <span class="tag">Средний</span>
+                        <span class="tag">120 мин</span>
+                        <span class="tag">4 порций</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <div class="recipe-image">🥖 Домашний хлеб</div>
+                <div class="recipe-content">
+                    <div class="recipe-title">Домашний хлеб</div>
+                    <div class="recipe-description">Простой рецепт домашнего хлеба на закваске</div>
+                    <div class="recipe-tags">
+                        <span class="tag">Начинающий</span>
+                        <span class="tag">180 мин</span>
+                        <span class="tag">6 порций</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <div class="recipe-image">🌾 Ржаной хлеб</div>
+                <div class="recipe-content">
+                    <div class="recipe-title">Ржаной хлеб</div>
+                    <div class="recipe-description">Ароматный ржаной хлеб с семечками</div>
+                    <div class="recipe-tags">
+                        <span class="tag">Средний</span>
+                        <span class="tag">150 мин</span>
+                        <span class="tag">5 порций</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
